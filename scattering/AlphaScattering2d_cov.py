@@ -1,6 +1,7 @@
 import torch.fft as fft
 import scipy.io as sio
 import math
+import torch
 import torch.nn.functional as F
 from scattering.backend import cdgmm, Modulus, SubsampleFourier, Pad, mulcu, \
     SubInitSpatialMeanR, SubInitSpatialMeanC, DivInitStdR, DivInitStd, \
