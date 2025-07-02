@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scattering"
+version = "0.1.0"
+description = "Scattering transform module"
+readme = "README.md"
+authors = [
+  { name = "Sihao Cheng", email = "sihao@example.com" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.6"
+keywords = ["scattering", "transform", "signal processing"]
+
+dependencies = [
+  "torch",
+  "numpy",
+  "scipy<=1.15.3",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
